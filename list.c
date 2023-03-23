@@ -52,7 +52,7 @@ void * nextList(List * list) {
     list -> current = nuevonodo;
     list -> tail = nuevonodo;
   
-    return (list -> head);
+    return (list -> head -> data);
 }
 
 void * lastList(List * list) {
