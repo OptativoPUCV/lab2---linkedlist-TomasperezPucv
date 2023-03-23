@@ -168,3 +168,16 @@ Thu 23 Mar 2023 07:43:50 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 c58e771
+Thu 23 Mar 2023 07:44:49 PM UTC: 
+ list.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:46:34: error: expected ‘;’ before ‘}’ token
+   46 |     return (list -> head -> data)
+      |                                  ^
+      |                                  ;
+   47 | }
+      | ~                                 
+Compilation failed
+3a9b862

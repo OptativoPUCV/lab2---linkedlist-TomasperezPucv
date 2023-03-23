@@ -43,14 +43,13 @@ void * firstList(List * list) {
       list -> current = list -> head;
     }
     else return NULL;
-    return (list -> head -> data);
+    return (list -> head -> data)
 }
 
 void * nextList(List * list) {
-    Node *nuevonodo=NULL;
-    nuevonodo-> prev = list ->current;
-    list -> current = nuevonodo;
-    return(list -> current -> data);
+    //Node *nuevonodo = malloc(sizeof(Node));
+    
+    return list;
 }
 
 void * lastList(List * list) {
