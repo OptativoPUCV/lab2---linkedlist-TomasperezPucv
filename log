@@ -73,3 +73,14 @@ Thu 23 Mar 2023 06:09:16 PM UTC:
  tests:  1|5
 total_score: 10/70
 832a217
+Thu 23 Mar 2023 06:12:47 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:20: error: ‘*(Node *)malloc (24).data’ is used uninitialized [-Werror=uninitialized]
+   41 |     list -> head = createNode(list -> head -> data);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c653a7c
