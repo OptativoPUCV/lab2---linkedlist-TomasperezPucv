@@ -307,3 +307,14 @@ list.c:22:8: note: declared here
       |        ^~~~~~~~~~
 Compilation failed
 fb7cbc9
+Thu 23 Mar 2023 08:27:47 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘nextList’:
+list.c:50:22: error: ‘nuevonodo’ is used uninitialized [-Werror=uninitialized]
+   50 |     Node *nuevonodo= createNode(nuevonodo -> data);
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cbc6853
