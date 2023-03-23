@@ -5,7 +5,7 @@
 
 typedef struct Node Node;
 
-struct Node {
+ struct Node {
     void * data;
     Node * next;
     Node * prev;
@@ -29,7 +29,8 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-     return NULL;
+    List *Nuevalista= malloc(sizeof(Node));
+     return Nuevalista;
 }
 
 void * firstList(List * list) {
