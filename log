@@ -141,3 +141,14 @@ list.c:50:23: error: ‘nuevonodo’ is used uninitialized [-Werror=uninitialize
 cc1: all warnings being treated as errors
 Compilation failed
 b3b5023
+Thu 23 Mar 2023 07:43:09 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:51:5: error: ‘nuevonodo’ undeclared (first use in this function)
+   51 |     nuevonodo-> prev = list ->current;
+      |     ^~~~~~~~~
+list.c:51:5: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+430d200
