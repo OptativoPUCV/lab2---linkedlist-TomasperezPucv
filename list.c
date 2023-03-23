@@ -43,7 +43,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    Node *nuevonodo = malloc(sizeof(Node));
+    //Node *nuevonodo = malloc(sizeof(Node));
     
     return list;
 }
