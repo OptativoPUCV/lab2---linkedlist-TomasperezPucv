@@ -14,3 +14,14 @@ Thu 23 Mar 2023 04:01:08 PM UTC:
  tests:  1|5
 total_score: 10/70
 f5d1109
+Thu 23 Mar 2023 04:04:10 PM UTC: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:38:3: error: ignoring return value of ‘scanf’ declared with attribute ‘warn_unused_result’ [-Werror=unused-result]
+   38 |   scanf("%i", &dato);
+      |   ^~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+39b655b
