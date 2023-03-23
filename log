@@ -204,3 +204,14 @@ list.c:55:29: error: ‘*nuevonodo.data’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 053e739
+Thu 23 Mar 2023 08:05:21 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘nextList’:
+list.c:50:23: error: ‘nuevonodo’ is used uninitialized [-Werror=uninitialized]
+   50 |     Node *nuevonodo = createNode(nuevonodo-> data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dad5d71
