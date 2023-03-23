@@ -363,3 +363,16 @@ list.c:55:29: error: ‘*nuevonodo.data’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 03a8573
+Thu 23 Mar 2023 08:41:41 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:52:40: error: expected ‘;’ before ‘list’
+   52 |     nuevonodo -> prev = list -> current
+      |                                        ^
+      |                                        ;
+   53 |     list -> current = nuevonodo;
+      |     ~~~~                                
+Compilation failed
+be56f9e
