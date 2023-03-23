@@ -387,3 +387,9 @@ list.c:56:29: error: ‘*nuevonodo.data’ is used uninitialized [-Werror=uninit
 cc1: all warnings being treated as errors
 Compilation failed
 0450344
+Thu 23 Mar 2023 08:42:01 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+1c6c4e8

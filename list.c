@@ -53,7 +53,7 @@ void * nextList(List * list) {
     list -> current = nuevonodo;
     
     
-    return (list -> current -> data);
+    return (list -> current /*-> data*/);
 }
 
 void * lastList(List * list) {
