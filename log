@@ -163,3 +163,8 @@ list.c:51:22: error: ‘nuevonodo’ is used uninitialized [-Werror=uninitialize
 cc1: all warnings being treated as errors
 Compilation failed
 4c6439a
+Thu 23 Mar 2023 07:43:50 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+c58e771
