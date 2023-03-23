@@ -25,3 +25,9 @@ list.c:38:3: error: ignoring return value of ‘scanf’ declared with attribute
 cc1: all warnings being treated as errors
 Compilation failed
 39b655b
+Thu 23 Mar 2023 04:07:25 PM UTC: 
+ list.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  1|5
+total_score: 10/70
+7454b00

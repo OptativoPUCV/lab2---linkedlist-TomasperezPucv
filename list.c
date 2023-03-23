@@ -34,10 +34,8 @@ List * createList() {
 }
 
 void * firstList(List * lista) {
-  int dato;
-  scanf("%i", &dato);
-  /*lista -> head =
-  lista -> current =*/
+  createNode(lista -> head );
+  lista -> current = lista -> head;
     return lista;
 }
 
