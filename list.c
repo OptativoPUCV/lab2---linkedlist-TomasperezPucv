@@ -33,8 +33,9 @@ List * createList() {
      return Nuevalista;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * lista) {
+  
+    return lista;
 }
 
 void * nextList(List * list) {
