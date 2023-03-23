@@ -47,12 +47,12 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    Node *nuevonodo = createNode(nuevonodo-> data);
+    Node *nuevonodo ;
     list -> current -> next = nuevonodo;
     list -> current = nuevonodo;
     list -> tail = nuevonodo;
   
-    return (list -> current -> data);
+    return (list -> current);
 }
 
 void * lastList(List * list) {
