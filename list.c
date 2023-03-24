@@ -139,6 +139,7 @@ void * popCurrent(List * list) {//curren al nodo siguiente
       list -> head = list -> current -> next;
       free(list -> current);
       list -> current = list -> head;
+      list -> head -> prev = NULL;
       return  databorrada;
     }
     return NULL;
