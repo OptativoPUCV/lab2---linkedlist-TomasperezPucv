@@ -431,3 +431,14 @@ Fri 24 Mar 2023 11:22:53 AM UTC:
  tests:  2|5
 total_score: 15/70
 109c275
+Fri 24 Mar 2023 11:28:29 AM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:54:29: error: ‘*nuevonodo.data’ is used uninitialized [-Werror=uninitialized]
+   54 |     return (list -> current -> data);
+      |            ~~~~~~~~~~~~~~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aaf445d
