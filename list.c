@@ -99,9 +99,11 @@ void pushCurrent(List * list, void * data) {
     list -> tail = nodonuevo;
     return;
   }
+  if(list -> current == list -> tail) list -> tail = nodonuevo;
   list -> current -> next = nodonuevo;
   nodonuevo -> prev = list -> current;
   list -> current = nodonuevo;
+  
   return;
 }
 
