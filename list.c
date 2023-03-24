@@ -117,11 +117,29 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list) {//curren al nodo siguiente
+    //caso 1 "el nodo es el ultimo"
+    void * databorrada;
     if (list -> current -> next == NULL){
       list -> current = list -> current -> prev;
+      databorrada = list -> current -> next -> data;
       free(list -> current -> next);
+      return databorrada;
+    }
+    //caso 2 " en medio de la lista"
+    /*if((list -> current -> next != NULL)&&(list -> current -> prev != NULL)){
+      databorrada = list -> current -> data;
       
+      
+      return  databorrada;
+    }*/
+  // caso 3 "al inicio de la lista"
+    if (list -> current == list -> head){
+      databorrada = list -> current -> data;
+      list -> head = list -> current -> next;
+      free(list -> current);
+      list -> current = list -> head;
+      return  databorrada;
     }
     return NULL;
 }
