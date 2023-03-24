@@ -487,3 +487,14 @@ Fri 24 Mar 2023 11:36:12 AM UTC:
  tests:  2|5
 total_score: 15/70
 ae776c7
+Fri 24 Mar 2023 11:37:59 AM UTC: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:49:9: error: unused variable ‘nuevonodo’ [-Werror=unused-variable]
+   49 |   Node *nuevonodo = malloc(sizeof(Node));
+      |         ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7ddcfc2
