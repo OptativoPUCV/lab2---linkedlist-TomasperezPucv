@@ -498,3 +498,9 @@ list.c:49:9: error: unused variable ‘nuevonodo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 7ddcfc2
+Fri 24 Mar 2023 11:38:08 AM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  2|5
+total_score: 15/70
+56cf1aa
