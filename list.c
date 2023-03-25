@@ -133,15 +133,7 @@ void * popCurrent(List * list) {//curren al nodo siguiente
     
     
   
-    if (list -> current == list -> head){
-      databorrada = list -> current -> data;
-      list -> head = list -> current -> next;
-      free(list -> current);
-      list -> current = list -> head;
-      list -> head -> prev = NULL;
-      return  databorrada;
-    }
-    return NULL;
+    
 }
 
 void cleanList(List * list) {
